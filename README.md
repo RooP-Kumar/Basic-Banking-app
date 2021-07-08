@@ -1,6 +1,6 @@
 # Basic-Banking-app
 
-Basic Banking App is a simple banking system app. In this application user can send money to someone who is listed on all users list. And can see all transection user did in transection page.
+**Basic Banking App** is a simple banking system app. In this application user can send money to someone who is listed on all users list. And can see all transection user did in transection page.
 
 Requirements :- 
 - API level of 7 or higher
