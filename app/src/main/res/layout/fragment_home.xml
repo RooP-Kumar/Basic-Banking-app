@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:src="@drawable/bank_logo"
+            android:contentDescription="@string/back_description" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/cardbackll"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:id="@+id/usersBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/user_btn_back"
+            android:elevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables,UselessParent">
+
+                <ImageView
+                    android:id="@+id/personImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/user_vector"
+                    android:src="@drawable/persons"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userText"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/transectionBtn"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:elevation="10dp"
+            android:background="@drawable/user_btn_back"
+            android:layout_marginStart="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables,UselessParent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/user_vector"
+                    android:src="@drawable/transections"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transectiosText"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Welcome"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/welcomeText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bank_app"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toText"
+        />
+
+
+</RelativeLayout>

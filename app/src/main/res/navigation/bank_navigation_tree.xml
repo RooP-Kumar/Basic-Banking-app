@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bank_navigation_tree"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.simplebankingapplication.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_usersFragment"
+            app:destination="@id/usersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transectionsFragment"
+            app:destination="@id/transectionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.example.simplebankingapplication.Fragments.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_usersFragment_to_usersDetailFragment"
+            app:destination="@id/usersDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/usersDetailFragment"
+        android:name="com.example.simplebankingapplication.Fragments.UsersDetailFragment"
+        android:label="fragment_users_detail"
+        tools:layout="@layout/fragment_users_detail" >
+        <action
+            android:id="@+id/action_usersDetailFragment_to_chooseToPayFragment"
+            app:destination="@id/chooseToPayFragment"
+            app:popUpTo="@id/usersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transectionsFragment"
+        android:name="com.example.simplebankingapplication.Fragments.TransectionsFragment"
+        android:label="fragment_transections"
+        tools:layout="@layout/fragment_transections" >
+        <action
+            android:id="@+id/action_transectionsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseToPayFragment"
+        android:name="com.example.simplebankingapplication.Fragments.ChooseToPayFragment"
+        android:label="fragment_choose_to_pay"
+        tools:layout="@layout/fragment_choose_to_pay" >
+        <action
+            android:id="@+id/action_chooseToPayFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_chooseToPayFragment_to_usersFragment"
+            app:destination="@id/usersFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+</navigation>

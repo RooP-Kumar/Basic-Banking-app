@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Simple Banking Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_description">Bank Logo</string>
+    <string name="Welcome">WELCOME</string>
+    <string name="to">To</string>
+    <string name="bank_app">Banking System</string>
+    <string name="user_vector">Users Vector</string>
+    <string name="userText">Users</string>
+    <string name="transectiosText">Transections</string>
+    <string name="enterAmountText">Enter Amount</string>
+    <string name="cancelText">Cancel</string>
+    <string name="sendText">Send</string>
+    <string name="fromtext">From : </string>
+    <string name="toText">To : </string>
+    <string name="nothingIsSent">Nothing is sent</string>
+    <string name="noTransectionYet">No transection yet</string>
+    <string name="firstprocessingtext">.</string>
+    <string name="secondprocessingtext">..</string>
+    <string name="thirdprocessingtext">...</string>
+    <string name="paymentText">Payment</string>
+    <string name="transectioSuccess">Transection Successful</string>
+    <string name="transectionFailed">Transection Failed</string>
+    <string name="banklogo">TODO</string>
+    <string name="banking_system">Banking System</string>
+    <string name="allUserText">All Users</string>
+    <string name="transectionText">Transections</string>
+    <string name="choosetopaytext">Choose user to pay</string>
+    <string name="Processing">Processing</string>
+</resources>

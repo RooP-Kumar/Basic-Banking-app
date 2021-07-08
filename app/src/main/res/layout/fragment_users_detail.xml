@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_details_frag_back"
+    android:orientation="vertical"
+    tools:context=".Fragments.UsersDetailFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/userDetailsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_200"
+        style="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/upperLL"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/userDetailsToolbar"
+        android:background="@color/purple_200"
+        android:orientation="horizontal" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userDetailFragImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:src="@drawable/alexander" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userDetailFragImage"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/detailsFragTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Amount"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userDetailFragName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="userName"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/userDetailFragEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Email :"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/userDetailFragPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Phone :"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detailsFragAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Account : "
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detailsIfsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="IFSC : "
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/sendMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_btn_back"
+            android:elevation="10dp"
+            android:text="send">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Send Money"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
